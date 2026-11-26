@@ -14,6 +14,7 @@
 <script lang="ts">
 	import ArchiveIcon from 'octicons-plain-react/Archive';
 	import BugIcon from 'octicons-plain-react/Bug';
+	import FilterIcon from 'octicons-plain-react/Filter';
 	import FlagIcon from 'octicons-plain-react/Flag';
 	import FlameIcon from 'octicons-plain-react/Flame';
 	import KeyIcon from 'octicons-plain-react/Key';
@@ -151,6 +152,30 @@
 					will stop being saved
 				</a>. If you need to use a lot of CSS, use a dedicated userstyle
 				extension.
+			</p>
+		</details>
+	</HandleExpand>
+
+	<HandleExpand>
+		<details id="file-filter">
+			<summary><DomChef as={FilterIcon} /> File filter</summary>
+			<p>
+				Files in pull requests that match these patterns are collapsed in the
+				diff and left out of the filtered diff stats. One pattern per line, like
+				in <code>.gitignore</code>: patterns without <code>/</code> match the
+				file name in any folder, <code>**</code> matches any number of folders,
+				and lines starting with <code>#</code> are ignored.
+			</p>
+
+			<!-- eslint-disable-next-line @html-eslint/require-input-label -->
+			<p>
+				<textarea
+					class="monospace-field text-code"
+					name="fileFilter"
+					rows="3"
+					spellcheck="false"
+					aria-label="File filter patterns"
+				></textarea>
 			</p>
 		</details>
 	</HandleExpand>
