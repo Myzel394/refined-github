@@ -1,0 +1,26 @@
+query GetPullRequestFiles(
+	$owner: String!
+	$name: String!
+	$number: Int!
+	$cursor: String
+) {
+	repository(owner: $owner, name: $name) {
+		pullRequest(number: $number) {
+			changedFiles
+			headRefOid
+			baseRefOid
+			files(first: 100, after: $cursor) {
+				nodes {
+					path
+					additions
+					deletions
+					changeType
+				}
+				pageInfo {
+					hasNextPage
+					endCursor
+				}
+			}
+		}
+	}
+}

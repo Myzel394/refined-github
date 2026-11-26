@@ -113,6 +113,7 @@
 	"pr-base-commit",
 	"pr-branch-auto-delete",
 	"pr-commit-lines-changed",
+	"pr-filtered-lines-changed",
 	"pr-filters",
 	"pr-first-commit-title",
 	"pr-from-branch",
