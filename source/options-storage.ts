@@ -9,6 +9,7 @@ export type RghOptions = typeof defaults;
 const defaults = Object.assign({
 	actionUrl: 'https://github.com/',
 	customCss: '',
+	fileFilter: '*.test.*',
 	personalToken: [''],
 	logging: false,
 	logHttp: false,
