@@ -85,13 +85,3 @@ void features.add(import.meta.url, {
 	],
 	init,
 });
-
-/*
-
-Test URLs
-
-- PR with `*.test.*` files: https://github.com/refined-github/refined-github/pull/10377/changes
-- Large PR, try the `*.tsx` filter: https://github.com/refined-github/refined-github/pull/10227/changes
-- Link to a test file: https://github.com/refined-github/refined-github/pull/10377/changes#diff-af70be7be9cbac2772f891cb9ad8721f6e261d8568d0df0a9656846035dd7c74
-
-*/
