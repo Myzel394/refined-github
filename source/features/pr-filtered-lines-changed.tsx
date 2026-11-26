@@ -189,12 +189,3 @@ void features.add(import.meta.url, {
 	requiresToken: true,
 	init,
 });
-
-/*
-
-Test URLs:
-
-- Lockfile and test file: https://github.com/refined-github/refined-github/pull/10366
-- From a fork: https://github.com/refined-github/refined-github/pull/10370
-
-*/
