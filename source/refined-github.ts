@@ -220,5 +220,6 @@ import './features/pr-from-branch.js';
 import './features/mark-locked.js';
 import './features/subscribe-releases.js';
 import './features/dim-viewed-files.js';
+import './features/collapse-filtered-files.js';
 import './features/absolute-time.js';
 import './features/fork-you.js';

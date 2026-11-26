@@ -23,7 +23,7 @@ function isDeletedFile(fileHeader: HTMLElement): boolean {
 	return elementExists('.octicon-file-removed', diffInFileTree);
 }
 
-function getFilePath(fileHeader: HTMLElement): string {
+export function getFilePath(fileHeader: HTMLElement): string {
 	const fileNameElement = $('[class*="file-name"] code', fileHeader);
 	const renamedTooltip = $optional('span.sr-only', fileNameElement);
 	return (
